@@ -46,4 +46,4 @@ WORKDIR ${SOFT_HOME}
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Run Atlassian as a foreground process by default.
-#CMD ["/opt/atlassian/crowd/bin/start-crowd.sh", "-fg"]
+#CMD ["/opt/atlassian/crowd/start-crowd.sh", "-fg"]
