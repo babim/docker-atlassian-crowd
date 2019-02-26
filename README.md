@@ -5,12 +5,12 @@
 
 To quickly get started running a Crowd instance, use the following command:
 ```bash
-docker run --detach --publish 8095:8095 babim/crowd:latest
+docker run --detach --publish 8095:8095 babim/crowd:fixed
 ```
 ```
 volume:
 /var/atlassian/crowd
-/opt/atlassian/crowd/logs
+/opt/atlassian/crowd
 ```
 
 Then simply navigate your preferred browser to `http://[dockerhost]:8095` and finish the configuration.
