@@ -1,9 +1,9 @@
-FROM adoptopenjdk/openjdk11:alpine
+FROM adoptopenjdk/openjdk8:alpine
 
 # Configuration variables.
 ENV SOFT		crowd
 #ENV SOFTSUB		core
-ENV OPENJDKV		11
+ENV OPENJDKV		8
 ENV CROWD_VERSION	3.7.0
 ENV CROWD_HOME		/var/atlassian/${SOFT}
 ENV CROWD_INSTALL	/opt/atlassian/${SOFT}
