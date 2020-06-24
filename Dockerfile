@@ -4,7 +4,7 @@ FROM adoptopenjdk/openjdk11:debian-slim
 ENV SOFT		crowd
 #ENV SOFTSUB		core
 ENV OPENJDKV		11
-ENV CROWD_VERSION	4.0.0
+ENV CROWD_VERSION	4.1.0
 ENV CROWD_HOME		/var/atlassian/${SOFT}
 ENV CROWD_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${CROWD_HOME}
