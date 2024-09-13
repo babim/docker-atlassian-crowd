@@ -1,7 +1,7 @@
-ARG BASE_IMAGE=eclipse-temurin:17-noble
+FROM eclipse-temurin:17-noble
 
 # Configuration variables.
-ENV SOFT		crowd
+ENV SOFT			crowd
 #ENV SOFTSUB		core
 ENV OPENJDKV		17
 ENV CROWD_VERSION	6.0.2
