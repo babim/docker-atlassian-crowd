@@ -4,7 +4,7 @@ FROM adoptopenjdk/openjdk8:alpine
 ENV SOFT			crowd
 #ENV SOFTSUB		core
 ENV OPENJDKV		8
-ENV CROWD_VERSION	5.1.10
+ENV CROWD_VERSION	5.1.11
 ENV CROWD_HOME		/var/atlassian/${SOFT}
 ENV CROWD_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${CROWD_HOME}
