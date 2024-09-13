@@ -1,10 +1,10 @@
-FROM adoptopenjdk/openjdk8:alpine
+FROM eclipse-temurin:17-alpine
 
 # Configuration variables.
-ENV SOFT		crowd
+ENV SOFT			crowd
 #ENV SOFTSUB		core
-ENV OPENJDKV		8
-ENV CROWD_VERSION	5.1.2
+ENV OPENJDKV		17
+ENV CROWD_VERSION	6.0.2
 ENV CROWD_HOME		/var/atlassian/${SOFT}
 ENV CROWD_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${CROWD_HOME}
