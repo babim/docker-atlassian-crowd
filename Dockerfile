@@ -1,10 +1,10 @@
-FROM adoptopenjdk/openjdk11:debian-slim
+ARG BASE_IMAGE=eclipse-temurin:17-noble
 
 # Configuration variables.
-ENV SOFT		crowd
+ENV SOFT			crowd
 #ENV SOFTSUB		core
-ENV OPENJDKV		11
-ENV CROWD_VERSION	5.1.2
+ENV OPENJDKV		17
+ENV CROWD_VERSION	6.0.2
 ENV CROWD_HOME		/var/atlassian/${SOFT}
 ENV CROWD_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${CROWD_HOME}
@@ -44,7 +44,8 @@ VOLUME ["${SOFT_HOME}", "${SOFT_INSTALL}"]
 # Set the default working directory as the installation directory.
 WORKDIR ${SOFT_HOME}
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
 # Run Atlassian as a foreground process by default.
 #CMD ["/opt/atlassian/crowd/start-crowd.sh", "-fg"]
