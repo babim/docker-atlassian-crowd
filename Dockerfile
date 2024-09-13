@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=eclipse-temurin:17-noble
+FROM eclipse-temurin:17-noble
 
 # Configuration variables.
 ENV SOFT			crowd
